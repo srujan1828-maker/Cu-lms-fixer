@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "CU LMS File Downloader & Tools",
+  "name": "CU-LMS Fixer",
   "version": "1.4.0",
   "description": "Adds one-click download buttons to file resources, copy buttons to reading pages, and customizable SOP popup controls on CU LMS.",
   "permissions": ["downloads", "clipboardWrite", "storage"],
