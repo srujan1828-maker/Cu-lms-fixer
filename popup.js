@@ -11,18 +11,21 @@ const elements = {
   hideSopPermanently: document.getElementById("hideSopPermanently"),
   disableAutoSopPopup: document.getElementById("disableAutoSopPopup"),
   saveStatus: document.getElementById("saveStatus"),
+  footerCredit: document.getElementById("footerCredit"),
   githubLink: document.getElementById("githubLink"),
 };
 
 let saveTimeout = null;
 
 function showSaved() {
-  if (!elements.saveStatus) return;
+  if (!elements.saveStatus || !elements.footerCredit) return;
+  elements.footerCredit.classList.add("hidden");
   elements.saveStatus.classList.add("visible");
   clearTimeout(saveTimeout);
   saveTimeout = setTimeout(() => {
     elements.saveStatus.classList.remove("visible");
-  }, 1500);
+    elements.footerCredit.classList.remove("hidden");
+  }, 1400);
 }
 
 async function loadSettings() {
