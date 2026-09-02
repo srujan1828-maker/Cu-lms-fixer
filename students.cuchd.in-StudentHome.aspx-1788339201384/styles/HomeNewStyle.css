@@ -1,0 +1,464 @@
+
+        #slider {
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto 0 auto;
+        }
+
+            #slider ul {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                height: 200px;
+                list-style: none;
+            }
+
+                #slider ul li {
+                    position: relative;
+                    /*display: block;*/
+                    float: left;
+                    margin: 0;
+                    padding: 0;
+                    width: 360px;
+                    height: 300px;
+                    text-align: center;
+                }
+
+                   a.control_prev, a.control_next {
+	                    position: absolute;
+	                    top: 40%;
+	                    z-index: 999;
+	                    display: block;
+	                    padding: 0;
+	                    width: 30px;
+	                    height: 30px;
+	                    background: #d9d9d9;
+	                    opacity: 0.8;
+	                    cursor: pointer;
+	                    line-height: 30px;
+	                    text-align: center;
+	                    border-radius: 50% !important;
+                    }
+
+            a.control_prev:hover, a.control_next:hover {
+                opacity: 1;
+                -webkit-transition: all 0.2s ease;
+            }
+
+        
+
+        a.control_next {
+            right: 0;
+        }
+
+         a.control_prev {
+            left: 0;
+        }
+
+        .slider_option {
+            position: relative;
+            margin: 10px auto;
+            width: 160px;
+            font-size: 18px;
+        }
+
+        .mt-10 {
+            margin-top: 10px;
+            width:100%;
+        }
+
+        .mt-20 {
+            margin-top: 20px;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        .p-3 {
+            padding: 3px;
+        }
+
+
+        #slider,
+        #slider ul li{
+            height: auto !important
+        }
+        .mtTable table{
+            width: 100%
+        }
+    
+        .bb-login {
+            margin-bottom: 2px;
+        }
+
+              .feedbackData {
+	                                text-align: left;
+                                    margin-top: 15px;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                }
+                                .feedbackData .col-xs-4 {
+	                                font-weight: bold;
+                                }
+
+                                .feedbackData .col-xs-4,
+                                .feedbackData .col-xs-8{
+                                    margin-bottom: 5px;
+                                }  
+
+                                .mtTable table {
+	                                background: #e6e6e6 !important;
+	                                border: 0;
+                                }
+                                .feedbackBtns {
+	                                border-radius: 6px;
+	                                overflow: hidden;
+	                                margin-top: 15px;
+                                }
+
+
+                                .feedbackQues {
+	                                background: #21517B;
+	                                color: #fff;
+	                                text-align: center;
+	                                display: block;
+	                                padding: 8px;
+	                                font-size: 14px;
+	                                font-weight: bold;
+	                                border-radius: 5px;
+	                                margin-top: 15px;
+	                                line-height: 16px;
+                                }
+
+
+                                .mtTable table td {
+	                                vertical-align: top;
+	                                font-size: 11px !important;
+                                }
+
+                                .mtTable table td label {
+	                                font-weight: normal;
+	                                margin: 0;
+                                }
+
+
+
+
+
+
+        @media only screen and (max-width: 1599px){
+            #slider ul li{
+                width: 290px
+            }
+        }
+        @media only screen and (max-width: 1365px) {
+            #slider ul li{
+                width: 315px
+            }
+        }
+        @media only screen and (max-width: 1199px) {
+            #slider ul li{
+                width: 250px
+            }
+            .feedbackData {
+                font-size: 13px;
+                line-height: 15px;
+            }
+        }
+        @media only screen and (max-width: 991px) {
+            #slider ul li{
+                width: 300px
+            }
+        }
+        @media only screen and (max-width: 369px) {
+            #slider ul li{
+                width: 250px
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .download-id-card a {
+            color: #fff;
+        }
+
+        .download-id-card {
+            background: rgb(229, 57, 53);
+            margin-bottom: 10px;
+            border-radius: 25px;
+            /*cursor: pointer;*/
+        }
+
+            .download-id-card:hover {
+                background: rgb(198, 40, 40);
+            }
+
+        @media only screen and (max-width: 768px) {
+            /*.bb-login {
+                                            margin-bottom: 5px;
+                                        }*/
+
+            .padding-0 {
+                padding: 0;
+            }
+        }
+
+        /*@media screen and (min-width: 769px) and (max-width: 991px) {
+                                            .bb-login {
+                                                margin-bottom: 25px;
+                                            }
+                                        }
+
+                                        @media screen and (min-width: 992px) and (max-width: 1172px) {
+                                            .bb-login {
+                                                margin-bottom: 7px;
+                                            }
+                                        }
+
+                                        @media screen and (min-width: 1173px) and (max-width: 1365px) {
+                                            .bb-login {
+                                                margin-bottom: 22px;
+                                            }
+                                        }
+
+                                        @media screen and (min-width: 1366px) and (max-width: 1401px) {
+                                            .bb-login {
+                                                margin-bottom: 5px;
+                                            }
+                                        }*/
+
+        .emp-avtar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+            .emp-avtar img {
+                width: 100%;
+            }
+
+
+
+        /* 22-08-2023*/
+
+        .box-shadow-common {
+            box-shadow: rgba(100,98,92,.06) 0 0 15px 4px;
+            border: 0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .portlet-caption {
+            font-size: 16px;
+            color: #354781;
+            font-weight: 600;
+        }
+
+        .portlet-title {
+            padding: 20px 20px;
+            background: #fff;
+        }
+
+        .portlet-body {
+            padding: 20px;
+            padding-top: 0;
+        }
+
+        .annoucment-search {
+            background: #fff;
+            padding: 0 20px;
+            box-shadow: none;
+            position: relative;
+        }
+
+            .page-search-input input[type=text], .annoucment-search input[type="text"], .annoucment-search select {
+                background-color: #f1f1f1;
+                border: 0;
+            }
+
+        .announcement-thumbnail {
+            border: 0;
+            padding: 20px;
+            background: #f1f1f1;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .news-section {
+            padding: 20px !important;
+        }
+
+        .announcement-thumbnail small {
+            display: block;
+            border-top: 2px solid #ddd;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+
+        .announcement-thumbnail h2 {
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        #MessagesLoading {
+            height: 320px;
+        }
+
+        .stickto_top {
+            position: absolute;
+            left: -1px;
+            top: 11px;
+        }
+
+        .ann-date ul li {
+            color: #ffffff;
+            font-size: 12px;
+            margin-right: 0;
+            background: #405189;
+            border-radius: 30px;
+            padding: 3px 8px;
+            line-height: 12px;
+            text-transform: uppercase;
+        }
+
+            .ann-date ul li i {
+                font-size: 11px;
+                margin-right: 5px;
+            }
+
+        .div_loader img {
+            width: 35px;
+        }
+
+        #divStudentMyMessages {
+            height: 320px;
+        }
+
+        .imp-msg-list ul li {
+            padding: 5px 0;
+            border-bottom: 0;
+        }
+
+            .imp-msg-list ul li p {
+                font-size: 12px;
+                padding: 15px;
+                background: #f1f1f1;
+                border-radius: 10px;
+                margin-bottom: 0;
+                position: relative;
+            }
+
+        .imp-msg-list {
+            height: 324px;
+        }
+
+        div[id*="divUniEmail"] {
+            border-radius: 10px;
+            padding: 10px;
+            top: 92px;
+        }
+
+        .download-id-card {
+	        background: #fff;
+	        padding: 10px 20px;
+        }
+
+        .download-id-card h3 {
+	        display: flex;
+	        text-align: left;
+	        align-items: center;
+	        font-size: 16px;
+	        font-weight: bold;
+	        width: 100%;
+	        justify-content: space-between;
+            color: #354781;
+        }
+
+        .download-id-card a {
+	        font-size: 16px;
+	        color: #354781;
+	        font-weight: 600;
+	        display: block;
+	        background: #e5f3fe;
+	        padding: 10px 15px;
+	        border-radius: 10px;
+        }
+
+        
+        .download-id-card:hover {
+	        background: rgb(255, 255, 255);
+        }
+
+        .weatherForecast{
+            display: none;
+        }
+
+        .weatherCast{
+            height: 57px !important;
+	        background: #21517b;
+	        border-radius: 10px;
+	        line-height: 70px;
+            margin-bottom: 20px;
+        }
+        .weatherwidget-io-frame {
+	        height: 75px !important;
+	        overflow: hidden !important;
+        }
+        .weatherwidget-io {
+	        height: 75px !important;
+	        text-indent: inherit;
+	        transform: scale(0.75);
+	        position: relative !important;
+	        top: -19px;
+	        pointer-events: none;
+	        max-width: 490px;
+	        margin: auto;
+        }
+
+
+        
+
+        @media only screen and (max-width: 991px) {
+            .download-id-card h3 {
+	                font-size: 14px;
+                }
+        }
+        @media only screen and (max-width: 479px) {
+            div[id*="divUniEmail"] {
+                left: 10px;
+                right: auto;
+                width: 250px;
+            }
+            .download-id-card h3 {
+	            display: block;
+                text-align: center;
+            }
+            .download-id-card a{
+                margin-top: 5px;
+            }
+        }
+        @media only screen and (max-width: 345px) {
+            .weatherCast,
+            .weatherwidget-io,
+            .weatherwidget-io-frame {
+	            height: 125px !important;
+            }
+            .weatherwidget-io{
+                top: 0;
+            }
+        }
+
+        /* 22-08-2023*/
+    
