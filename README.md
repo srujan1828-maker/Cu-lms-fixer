@@ -27,7 +27,11 @@ A powerful, lightweight Chrome extension designed for students and educators usi
 - **Hide and disable SOP popup (permanently)**: Completely suppresses the dialog and hides the floating **ALL SOPS** button from the page entirely.
 - **Zero interference**: Carefully isolated so Moodle's native **Notification popover**, **Message drawer**, and **My Learning** menus continue to work flawlessly.
 
-### 4. ⚙️ Interactive GUI Settings Popup
+### 4. 🚫 Automatic CUIMS Popup Disabler
+- **Disable automatic CUIMS popups** *(Default)*: Closes automatically displayed CUIMS dialogs, including Bootstrap-style modal popups.
+- **Manual dialogs remain available**: Dialogs opened through a CUIMS button are left alone, so normal workflows still work.
+
+### 5. ⚙️ Interactive GUI Settings Popup
 - Click the extension icon in your Chrome toolbar to toggle any feature on or off.
 - Settings are saved in `chrome.storage.sync` and applied **live in real-time** across all open CU LMS tabs without requiring a page refresh.
 
@@ -73,6 +77,7 @@ Click the extension icon in your browser toolbar to open the settings panel:
 | **Enable copy button** | Adds 1-click text copy buttons to reading material pages | `Enabled` |
 | **Hide and disable SOP popup (permanently)** | Completely blocks the popup & hides the SOP button | `Disabled` |
 | **Only disable auto SOP popup** | Suppresses auto-popup on load, allows opening via button | `Enabled` |
+| **Disable automatic CUIMS popups** | Closes CUIMS popups that appear automatically | `Enabled` |
 
 ---
 
