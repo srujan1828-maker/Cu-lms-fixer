@@ -1,10 +1,17 @@
 {
   "manifest_version": 3,
   "name": "CU-LMS Fixer",
-  "version": "1.4.0",
-  "description": "Adds one-click download buttons to file resources, copy buttons to reading pages, and customizable SOP popup controls on CU LMS.",
-  "permissions": ["downloads", "clipboardWrite", "storage"],
-  "host_permissions": ["https://lms.cuchd.in/*"],
+  "version": "1.5.1",
+  "description": "Adds one-click download and copy controls on CU LMS, plus configurable automatic popup blocking for CU LMS and CUIMS Student Home.",
+  "permissions": [
+    "downloads",
+    "clipboardWrite",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://lms.cuchd.in/*",
+    "https://students.cuchd.in/*"
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -25,9 +32,24 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://lms.cuchd.in/*"],
-      "js": ["content.js"],
-      "css": ["content.css"],
+      "matches": [
+        "https://lms.cuchd.in/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://students.cuchd.in/*"
+      ],
+      "js": [
+        "cuims.js"
+      ],
       "run_at": "document_idle"
     }
   ]
