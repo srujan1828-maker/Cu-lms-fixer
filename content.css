@@ -1,0 +1,44 @@
+.cu-lms-download-button,
+.cu-lms-copy-button {
+  position: relative;
+  z-index: 3;
+  align-self: flex-start;
+  margin: 0.45rem 0 0.1rem;
+  padding: 0.22rem 0.58rem;
+  border: 1px solid #bd1017;
+  border-radius: 0.3rem;
+  background: #bd1017;
+  color: #fff;
+  font: inherit;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+.cu-lms-download-button:hover:not(:disabled),
+.cu-lms-download-button:focus-visible:not(:disabled),
+.cu-lms-copy-button:hover:not(:disabled),
+.cu-lms-copy-button:focus-visible:not(:disabled) {
+  background: #8f0c11;
+  border-color: #8f0c11;
+  color: #fff;
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.cu-lms-download-button:disabled,
+.cu-lms-copy-button:disabled {
+  cursor: progress;
+  opacity: 0.72;
+}
+
+/* Feature 3: Hide & disable SOP popup and button permanently */
+html[data-cu-hide-sop-permanently="true"] #ai-lib-panel,
+html[data-cu-hide-sop-permanently="true"] .ai-lib-panel,
+html[data-cu-hide-sop-permanently="true"] #ai-lib-fab,
+html[data-cu-hide-sop-permanently="true"] .ai-lib-fab {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
