@@ -3,6 +3,7 @@ const DEFAULT_SETTINGS = {
   enableCopyButton: true,
   hideSopPermanently: false,
   disableAutoSopPopup: true,
+  disableAutoCuimsPopup: true,
 };
 
 const elements = {
@@ -10,6 +11,7 @@ const elements = {
   enableCopyButton: document.getElementById("enableCopyButton"),
   hideSopPermanently: document.getElementById("hideSopPermanently"),
   disableAutoSopPopup: document.getElementById("disableAutoSopPopup"),
+  disableAutoCuimsPopup: document.getElementById("disableAutoCuimsPopup"),
   saveStatus: document.getElementById("saveStatus"),
   footerCredit: document.getElementById("footerCredit"),
   githubLink: document.getElementById("githubLink"),
@@ -34,6 +36,7 @@ async function loadSettings() {
   elements.enableCopyButton.checked = Boolean(settings.enableCopyButton);
   elements.hideSopPermanently.checked = Boolean(settings.hideSopPermanently);
   elements.disableAutoSopPopup.checked = Boolean(settings.disableAutoSopPopup);
+  elements.disableAutoCuimsPopup.checked = Boolean(settings.disableAutoCuimsPopup);
 }
 
 async function saveSettings() {
@@ -42,6 +45,7 @@ async function saveSettings() {
     enableCopyButton: elements.enableCopyButton.checked,
     hideSopPermanently: elements.hideSopPermanently.checked,
     disableAutoSopPopup: elements.disableAutoSopPopup.checked,
+    disableAutoCuimsPopup: elements.disableAutoCuimsPopup.checked,
   };
 
   await chrome.storage.sync.set(settings);
@@ -64,6 +68,7 @@ function initListeners() {
     saveSettings();
   });
 
+  elements.disableAutoCuimsPopup.addEventListener("change", saveSettings);
   elements.enableDownloadButton.addEventListener("change", saveSettings);
   elements.enableCopyButton.addEventListener("change", saveSettings);
 
