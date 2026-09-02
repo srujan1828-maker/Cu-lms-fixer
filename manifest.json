@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "CU-LMS Fixer",
-  "version": "1.5.0",
-  "description": "Adds one-click download and copy controls on CU LMS, plus configurable automatic popup blocking for CU LMS and CUIMS.",
+  "version": "1.5.1",
+  "description": "Adds one-click download and copy controls on CU LMS, plus configurable automatic popup blocking for CU LMS and CUIMS Student Home.",
   "permissions": [
     "downloads",
     "clipboardWrite",
@@ -10,7 +10,7 @@
   ],
   "host_permissions": [
     "https://lms.cuchd.in/*",
-    "https://uims.cuchd.in/*"
+    "https://students.cuchd.in/*"
   ],
   "action": {
     "default_popup": "popup.html",
@@ -45,7 +45,7 @@
     },
     {
       "matches": [
-        "https://uims.cuchd.in/*"
+        "https://students.cuchd.in/*"
       ],
       "js": [
         "cuims.js"
