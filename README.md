@@ -59,13 +59,24 @@ A powerful, lightweight Chrome extension designed for students and educators usi
 
 4. **Load the Extension**:
    - Click the **Load unpacked** button in the top-left corner.
-   - Select the `cuchd-lms-downloads` folder (the folder containing `manifest.json`).
+   - Select the extracted repository root — for example, `Cu-lms-fixer-main` — **not** the ZIP file, `Downloads` folder, or a parent folder.
+   - Confirm the selected folder contains `manifest.json` directly alongside `content.js`, `popup.html`, and `background.js`.
 
 5. **Pin and Use**:
    - Click the puzzle icon 🧩 in your browser toolbar and pin **CU LMS Fixer**.
    - Navigate to [CU LMS](https://lms.cuchd.in) and enjoy an enhanced experience!
 
 ---
+
+
+### Troubleshooting: “Manifest file is missing or unreadable”
+
+Chrome shows this message before it evaluates the extension configuration: it means the folder chosen in **Load unpacked** does not contain a readable `manifest.json` file at its top level.
+
+1. Extract the downloaded ZIP completely first (do not load the ZIP itself).
+2. In **Load unpacked**, open the extracted `Cu-lms-fixer-main` folder and select the folder where you can see `manifest.json` directly.
+3. If the archive created an extra nested folder, select that inner folder instead. A valid selection contains `manifest.json`, `content.js`, `background.js`, and `popup.html` together.
+4. Re-download and extract the repository if `manifest.json` is absent or has been renamed (for example, to `manifest.json.txt`).
 
 ## ⚙️ Extension Settings & Configuration
 
